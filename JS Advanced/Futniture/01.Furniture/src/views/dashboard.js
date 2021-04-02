@@ -17,7 +17,7 @@ const dashboardTemplate = (data, search, onSearch) => html`
 `;
 
 export async function dashboardPage(context) {
-  const searchParam = context.querystring.split('=')[1];
+  const searchParam = context.querystring.split('=')[1] || '';
 
   let data = await getFurniture(searchParam);
   context.render(dashboardTemplate(data, searchParam, onSearch));
