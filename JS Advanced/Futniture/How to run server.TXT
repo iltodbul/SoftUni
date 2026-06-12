@@ -1,1 +1,0 @@
-Open cmd terminal in server folder and type "node server.js" 
